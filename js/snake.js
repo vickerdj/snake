@@ -45,7 +45,7 @@ $('document').ready(function(){
 		tail: [20,20],
 		head: [20,20],
 		whole: [[20,20]],
-		pic: '<img src="images/skull2.png" class="snake">'
+		pic: '<img src="images/skull.png" class="snake">'
 	};
 /*-----------------------------------Function to add food*/
 	var food = function(){
