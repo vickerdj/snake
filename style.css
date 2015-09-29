@@ -1,0 +1,72 @@
+/*GLOBAL STYLES------------------------------------*/
+body {
+	background-color: #fff;}
+*, *:after, *:before {	
+	box-sizing: border-box;}
+
+.scoreBoard {
+	height: 40px;
+	width: 200px;
+	margin: 20px auto;
+	padding: 10px 5px;
+	border: 1px solid #000;}
+
+.scoreBoard > p {
+	font-family: arial;
+	float: left;
+	font-weight: 600;}
+
+#score {
+	float: right;
+	padding-right: 5px;}
+
+.start {
+	height: 30px;
+	width: 100px;
+	margin: 0 auto;}
+
+.startButton {
+	font-family: arial;
+	font-weight: 600;
+	color: #fff;
+	background-color: #0099FF;}
+
+.container {
+	height: 800px;
+	width: 800px;
+	border: 1px solid #000;
+	background-color: #CCE6FF;
+	margin: 20px auto;
+	box-sizing: content-box;}
+
+.pixel {
+	height: 20px;
+	width: 20px;
+	border: 1px solid #000;
+	float: left;}
+
+.food {
+	color: #fff;
+	font-weight: 600;
+	background-color: #FF0000;
+	padding: 2px 4px;
+	height: 18px;
+	width: 18px}
+
+.snake {
+	height: 18px;
+	width: 18px;
+	padding: none;
+}
+
+.gameOver {
+	height: 50px;
+	width: 180px;
+	padding: 10px;
+	background-color: yellow;
+	box-shadow: 10px 10px 5px #888888;
+	position: absolute;
+	font-family: arial;
+	font-weight: 600;
+	font-size: 28px;
+	color: #000;}
