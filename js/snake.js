@@ -52,14 +52,14 @@ $('document').ready(function(){
 		var xcoord = parseInt(Math.random() * 40);
 		var ycoord = parseInt(Math.random() * 40);	
 		for(elt in snake.whole){
-			if (xcoord===snake.whole[0] && ycoord===snake.whole[1]){
+			if (xcoord===elt[0] && ycoord===elt[1]){
 				food();
 			} else {
 				setCell([xcoord,ycoord],'<p class="food">F</p>');
 			}
 		};
 	};
-/*-----------------------------------Function to xheck if snake has hit itself*/
+/*-----------------------------------Function to check if snake has hit itself*/
 	var hitBody = function(a,b){
 		for (var elt in b){
 			if (b[elt][0]===a[0] && b[elt][1]===a[1]){
@@ -166,15 +166,8 @@ $('document').ready(function(){
 		};
 	};
 	$('.start').click(function(){
-		if (gameOver) {
 			init();
 			gameLoop();
-		} else {	
-			init();
-			//setCell(snake.head,snake.pic);
-			//food();
-			gameLoop();
-		};
 	});
 /*----------------------------Initialize state*/
 var init = function(){
